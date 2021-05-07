@@ -9,7 +9,7 @@ public class Exe4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Radio r1 = new Radio();
+        Radio r1 = new Radio(true, 10, 90);
         
         r1.info();
         

@@ -14,6 +14,14 @@ public class Radio {
     private float estacao;
     private boolean ligado;
     
+    //Construtor
+    public Radio(boolean lig, int vol, float est){
+        this.ligado = lig;
+        this.volume = vol;
+        this.estacao = est;
+    }
+    
+    //Set e Get do Ligado
     public void setLigado(boolean lig){
          this.ligado = lig;
     }
@@ -21,6 +29,7 @@ public class Radio {
         return this.ligado;
     }
     
+    //Set e Get do Volume
     public void setVolume(int vol){
          if(volume >= 0 && volume <= 100){
              this.volume = vol;
@@ -32,6 +41,7 @@ public class Radio {
         return volume;
     }
     
+    //Set e Get da Estação
     public void setEstacao(float est){
          if(estacao >= 0 && estacao <= 100){
              this.estacao = est;
@@ -43,6 +53,7 @@ public class Radio {
         return estacao;
     }
     
+   //Metodos
     public void aumentarVolume(){
         if (ligado == false){
             System.out.println("Rádio desligado");
